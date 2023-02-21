@@ -5,8 +5,10 @@
 
 body {
     text-align: center;
-    background-color: black;
-    color: white;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);    color: white;
+}
+table {
+    border:2px solid ;
 }
 
 #startGame {
@@ -19,5 +21,6 @@ body {
 #startGame:hover {
     opacity: 0.5;
     color: royalblue;
-    background-color: black;
+    background-color: white;
 }
+
