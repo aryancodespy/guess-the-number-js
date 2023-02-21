@@ -1,5 +1,8 @@
 document.getElementById("startGame").onclick = function() {playGame()};
 
+let userName = prompt("What's your name?");
+
+
 function playGame(){
 
     let randomNumber = Math.floor(Math.random(0)*10);
@@ -15,7 +18,7 @@ function playGame(){
         
         if (guess == randomNumber){
 
-            alert("Congartulations, You guessed the correct number.");
+            alert(`Congartulations ${userName}, You guessed the correct number.`);
 
             score++;
             highScore = highScore + score;
