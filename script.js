@@ -2,6 +2,7 @@ document.getElementById("startGame").onclick = function() {playGame()};
 
 let userName = prompt("What's your name?");
 
+document.getElementById("userName").innerHTML = userName;
 
 function playGame(){
 
@@ -30,11 +31,11 @@ function playGame(){
         }
 
         else if (guess != randomNumber && number_of_guess < guessLimit){
-            alert("Wrong guess, Try Agian.");
+            alert(`Wrong guess ${userName}, Try Agian.`);
         }
 
         else {
-            alert("Game Over, You failed!");
+            alert(`Game Over ${userName}, You failed!`);
             document.getElementById("score").innerHTML = score;
             document.getElementById("highScore").innerHTML = highScore;
             break;
