@@ -20,6 +20,9 @@ function playGame(){
             score++;
             highScore = highScore + score;
 
+            document.getElementById("score").innerHTML = score;
+            document.getElementById("highScore").innerHTML = highScore;
+
             break;
         }
 
@@ -29,6 +32,8 @@ function playGame(){
 
         else {
             alert("Game Over, You failed!");
+            document.getElementById("score").innerHTML = score;
+            document.getElementById("highScore").innerHTML = highScore;
             break;
         }
     }
