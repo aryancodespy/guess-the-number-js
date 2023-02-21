@@ -8,3 +8,16 @@ body {
     background-color: black;
     color: white;
 }
+
+#startGame {
+    padding:10px 5px;
+    width: 20%;
+    border: 2px solid royalblue;
+    border-radius: 25px;
+}
+
+#startGame:hover {
+    opacity: 0.5;
+    color: royalblue;
+    background-color: black;
+}
