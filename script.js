@@ -8,7 +8,7 @@ function playGame(){
     if (userName == false){
         userName = "stranger";
     }
-    
+
     document.getElementById("userName").innerHTML = userName;
 
     let randomNumber = Math.floor(Math.random(1)*10);
@@ -21,6 +21,11 @@ function playGame(){
     while(number_of_guess <= guessLimit){
         let guess = Number(prompt("Enter your guessed number:"));
         number_of_guess++ ;
+
+        if (guess == false){
+            alert(`Hi ${userName}, you didn't guess any number. Start again and guess the number.`);
+            break;
+        }
         
         if (guess == randomNumber){
 
