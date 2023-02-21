@@ -13,5 +13,23 @@ function playGame(){
         let guess = Number(prompt("Enter your guessed number:"));
         number_of_guess++ ;
         
+        if (guess == randomNumber){
+
+            alert("Congartulations, You guessed the correct number.");
+
+            score++;
+            highScore = highScore + score;
+
+            break;
+        }
+
+        else if (guess != randomNumber && number_of_guess < guessLimit){
+            alert("Wrong guess, Try Agian.");
+        }
+
+        else {
+            alert("Game Over, You failed!");
+            break;
+        }
     }
 }
