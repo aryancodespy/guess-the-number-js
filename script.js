@@ -4,9 +4,14 @@ document.getElementById("startGame").onclick = function() {playGame()};
 function playGame(){
 
     let userName = prompt("What's your name?");
+
+    if (userName == false){
+        userName = "stranger";
+    }
+    
     document.getElementById("userName").innerHTML = userName;
 
-    let randomNumber = Math.floor(Math.random(0)*10);
+    let randomNumber = Math.floor(Math.random(1)*10);
     let number_of_guess = 0;
     const guessLimit = 4;
 
