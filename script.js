@@ -9,7 +9,9 @@ function playGame(){
         userName = "stranger";
     }
 
-    document.getElementById("userName").innerHTML = userName;
+    const message = `Hi ${userName}, these are your scores.`;
+
+    document.getElementById("message-container").innerHTML = message;
 
     let randomNumber = Math.floor(Math.random(1)*10);
     let number_of_guess = 0;
