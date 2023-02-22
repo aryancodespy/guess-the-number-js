@@ -5,11 +5,20 @@
 
 body {
     text-align: center;
-    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);    color: white;
+    color: #fff;
+    background: url(./background.jpg);
+    background-attachment: fixed;
+}
+
+table caption{
+    color: #fff;
 }
 
 table {
-    border:2px solid ;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #fff;
+    color: #000;
 }
 
 #startGame {
